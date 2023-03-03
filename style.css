@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(31, 31, 63, 0.5);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,11,38,1) 0%, rgba(24,223,209,1) 0%, rgba(51,137,61,0.801733193277311) 0%, rgba(31,202,173,1) 0%, rgba(16,223,193,1) 6%, rgba(66,126,167,0.6952906162464986) 100%);
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.box{
+    background-color: rgba(240, 240, 240, 0.68);
+    border-width: 0px 2px 1px 0px;
+    border-style: solid;
+    border: none;
+    box-shadow:  0px 19px 41px rgba(0,0,0,0.36);
+    border-radius: 10px;
+    height: 250px;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+.box h2{
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 20px;
+    color: blueviolet;
+    font-family: sans-serif;
+}
+.box h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 40px;
+    font-family: "Popins" sans-serif;
+}
+#questionForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+#answerInput{
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+}
+#answerInput:focus-visible{
+    outline: 1px solid #8f00ff;
+    border: 1px solid #8f00ff;
+}
+
+.primary-btn{
+    background-color: #8f00ff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "Popins" sans-serif;
+}
+
+#toastBox{
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+}
+.toast{
+    width: 270px;
+    font-weight: 500;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    color: white;
+    position: relative;
+}
+
+
+
+@media screen and (max-width:567px) {
+    .box{
+        height: 200px;
+        width: 400px;
+    }
+    
+}
+
+@media screen and (max-width:425px){
+    .box{
+        padding: 20px;
+        border-radius: 5px;
+        height: 170px;
+        width: 350px;
+    }
+    .box h2{
+        font-size: 1.1rem;
+    }
+    .box h3{
+
+        font-size: 1.2rem;
+        font-family: "Popins" sans-serif;
+    }
+    #answerInput{
+        height: 30px;
+        padding: 5px;
+    }
+    
+    .primary-btn{
+        background-color: #8f00ff;
+        padding: 10px;
+    }
+    
+}
