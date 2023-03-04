@@ -57,17 +57,17 @@ const checkAnswer = (event) => {
 
         setTimeout(()=> {
             toast.remove();
-        },6000);
+        },5000);
     }else {
         score -= 1;
         let toast  = document.createElement('div')
         toast.classList.add('toast');
-        toast.innerHTML = `Your are Wrong and your score is ${score}`;
+        toast.innerHTML = `Your are Correct and your score is ${score}`;
         toastBox.appendChild(toast)
 
         setTimeout(()=> {
             toast.remove();
-        },6000);
+        },5000);
     }
     scoreEl.innerText = score;
     event.target.reset()

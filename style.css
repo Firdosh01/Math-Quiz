@@ -69,10 +69,9 @@
     cursor: pointer;
     font-family: "Popins" sans-serif;
 }
-
 #toastBox{
     position: absolute;
-    bottom:20px;
+    bottom: 20px;
     right: 20px;
 }
 .toast{
@@ -85,8 +84,6 @@
     color: white;
     position: relative;
 }
-
-
 
 @media screen and (max-width:567px) {
     .box{
