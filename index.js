@@ -62,7 +62,7 @@ const checkAnswer = (event) => {
         score -= 1;
         let toast  = document.createElement('div')
         toast.classList.add('toast');
-        toast.innerHTML = `Your are Correct and your score is ${score}`;
+        toast.innerHTML = `Your are Wrong and your score is ${score}`;
         toastBox.appendChild(toast)
 
         setTimeout(()=> {
