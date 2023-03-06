@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Math Quiz</title>
 </head>
+
 <body>
     <header>
-    <div class="background">
-        <div class="box">
-            <h2>Score  => <span id="score">0</span></h2>
-            <h3 id="question">Q. What is 8 multiply by 4 ?</h3>
+        <div class="background">
+            <div class="box">
+                <h2>Score => <span id="score">0</span></h2>
+                <h3 id="question">Q. What is 8 multiply by 4 ?</h3>
 
-            <form id="questionForm" onsubmit="checkAnswer(event)">
-                <input name="answer" id="answerInput" required>
-                <button class="primary-btn" type="submit">Submit</button>
-            </form>
+                <form id="questionForm" onsubmit="checkAnswer(event)">
+                    <input name="answer" id="answerInput" required>
+                    <button class="primary-btn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="toastBox"></div>
         </div>
-        <div id="toastBox"></div>
-    </div>
-        </header>
+    </header>
     <script src="./index.js"></script>
 </body>
+
 </html>
