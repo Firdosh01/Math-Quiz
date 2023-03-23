@@ -9,12 +9,14 @@
     background-color: rgba(31, 31, 63, 0.5);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(6,11,38,1) 0%, rgba(24,223,209,1) 0%, rgba(51,137,61,0.801733193277311) 0%, rgba(31,202,173,1) 0%, rgba(16,223,193,1) 6%, rgba(66,126,167,0.6952906162464986) 100%);
     display: grid;
+    background: linear-gradient(90deg, #26b68c, #d8c089);
+    background: linear-gradient(90deg, #389b54, #80cc71);
     /* background-color: #000000; */
     place-items: center;
     position: relative;
 }
 .box{
-    background-color: rgba(240, 240, 240, 0.68);
+    background-color: white;
     border-width: 0px 2px 1px 0px;
     border-style: solid;
     border: none;
